@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+h1{
+    color:black;
+    font-family: 'Lato', sans-serif;
+    font-size: 5vw;
+}
+
+.menu{
+    height: 100px;  
+    
+    text-align: center;
+    width: auto;
+     
+}
+
+p{
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    margin: 20px;   
+    padding-top: 30px;
+}
+
+section{
+    background-color: gray;
+    border: solid 1px black;
+}
+
+#section_1 > .title{
+    color: black;
+    background-color: palevioletred;   
+}
+
+#section_2 > .title{
+    color: white;
+    background-color: tomato;
+}
+
+#section_3 > .title{
+    color: black;
+    background-color: goldenrod;
+}
+
+.title{
+    border: solid 1px black;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 20px;
+    font-weight: 700;
+    margin: auto;
+    position: relative;
+    text-align: center; 
+    
+}
+
+
+/******* Media Queries *******/
+/*** Responsive framework ***/
+
+/********Large devices********/
+@media (min-width:992px) {
+    h1{
+        position: relative;
+        font-size: 5vw;
+        top: 50px;
+    }
+
+    #main{ 
+        position: absolute;
+        width: 100%;
+        height: auto;   
+    }
+
+    section{
+        background-color:blueviolet;  
+
+        margin: 10vw 3vw 3vw 8.5vw;
+        width: 20vw;
+        height: auto;
+        float: left;
+        clear: right;
+        
+    }
+
+    .title{
+        position: relative;
+        float: right;
+        width: 40%;
+        height: 35%;
+    }
+}
+
+
+
+/********Mediun devices********/
+@media (min-width:768px) and (max-width:991px) { 
+    
+    #main > #section_1{
+        top: 50px ;
+        float: left;
+        margin: 3vw 3vw 3vw 4vw;
+        width: 43vw;
+        
+    }
+
+    #main > #section_2{
+        top: 50px ;
+        float: left;
+        margin: 3vw 3vw 3vw 2vw;
+        width: 43vw;
+        
+    }
+
+    #main > #section_3{
+        position: relative;
+        clear: left;
+        margin: 4vw 6vw 3vw 4vw;
+        top: 20px;
+        width: 91vw;
+    }
+
+    .menu{
+        font-size: 8vw;   
+    }
+
+    p{
+        font-size: 3vw;
+        padding: 10px;
+        padding-top: 5vw;
+    }
+
+    section{
+        width: 40%;
+        height: auto;  
+        
+        background-color: blueviolet;
+    }
+
+    .title{
+        position: relative;
+        float: right;
+        width: 25vw;
+        height: 60%;
+        font-size: 5vw;
+    }
+
+
+}
+
+/********Small devices********/
+
+@media (max-width:767px) {
+    #main{ 
+        width: 100%;
+        height: auto; 
+    }
+
+    .menu{
+        font-size: 12vw;   
+    }
+
+    p{
+        font-size: 5vw;
+        padding: 5vw;
+    }
+
+    section{
+        position: relative;
+        width: 90%;
+        height: auto;  
+        margin: 40px 40px 40px 40px;
+        right:5px;
+        left: 0px;
+        
+
+        background-color: blueviolet;
+    }
+
+    .title{
+        position: relative;
+        float: right;
+        width: 40%;
+        height: 60%;
+        font-size: 5vw;
+    }
+}
+
+
